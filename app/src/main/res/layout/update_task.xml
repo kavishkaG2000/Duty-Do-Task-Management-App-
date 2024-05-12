@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateTaskActivity">
+
+    <TextView
+        android:id="@+id/updatetaskheasding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Update Task"
+        android:textColor="@color/green"
+        android:textSize="24dp" />
+
+
+
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the Title"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/updatetaskheasding"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="40dp"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/updateDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter The Description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/orange_border"
+        android:layout_below="@id/updateTitleEditText"
+        android:layout_marginTop="12dp"
+        />
+    <EditText
+        android:id="@+id/updateDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateDescriptionEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:hint="Select Date"
+        android:inputType="none"
+        android:onClick="showDatePickerDialog"
+        android:padding="12dp"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/updateTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateDateEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:hint="Select Time"
+        android:inputType="none"
+        android:onClick="showTimePickerDialog"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="update To-Do" />
+</RelativeLayout>
